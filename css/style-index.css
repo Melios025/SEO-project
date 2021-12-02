@@ -71,6 +71,21 @@
 }
 /* end-carousel */
 
+/* brands */
+.brands {
+    margin: 100px auto;
+}
+.col-logo {
+    width: 400px;
+}
+.col-logo img {
+    width: 100%;
+    cursor: pointer;
+}
+.col-logo img:hover {
+    transform: scale(1.2);
+}
+/* end-brands */
 /* footer */
 #main-footer #logo-website{
     height: 150px;

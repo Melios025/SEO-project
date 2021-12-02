@@ -6,7 +6,8 @@
 
 #main-nav .navbar{
     height: 80px;
-    font-size: 20px;   
+    font-size: 20px;
+    z-index: 10;
 }
 
 #main-nav .navbar li{
@@ -14,22 +15,30 @@
     padding-right: 15px;
 }
 
-#logo-website{
+#main-nav #logo-website{
     height: 80px;
     width: 80px;
 }
 
 .dropdown:hover>.dropdown-menu {
     display: block;
+    background-color: burlywood;
   }
   
 .dropdown>.dropdown-toggle:active {
     pointer-events: none;
 }
 
+
 /*  end-Header  */
 
 /* carousel */
+.carousel
+{
+   margin-top:50px;
+   z-index: 5;
+}
+
 .carousel > .carousel-item {
     height: 300px;
 }
@@ -76,7 +85,7 @@
     margin: 100px auto;
 }
 .col-logo {
-    width: 400px;
+    width: 300px;
 }
 .col-logo img {
     width: 100%;
@@ -86,9 +95,25 @@
     transform: scale(1.2);
 }
 /* end-brands */
+
+/* body */
+
+
+/* end-body */
+
+
 /* footer */
 #main-footer #logo-website{
     height: 150px;
     width: 150px;  
 }
 /* end-footer */
+
+
+/* mobile */
+@media only screen and (max-width: 800px) {
+    #main-nav #navbarNav{
+        background-color:whitesmoke;
+    }
+ }
+/* end-mobile */

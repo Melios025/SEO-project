@@ -20,12 +20,12 @@
     width: 80px;
 }
 
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover .dropdown-menu {
     display: block;
     background-color: burlywood;
   }
   
-.dropdown>.dropdown-toggle:active {
+.dropdown .dropdown-toggle:active {
     pointer-events: none;
 }
 

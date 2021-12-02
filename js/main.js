@@ -1,4 +1,6 @@
 // load header when have id header
-$("#header").load("../assets/php/headernav.html");
+$("#header").load("../assets/share/headernav.html");
+// load header when have id footer
+$("#footer").load("../assets/share/footer.html");
 // set time carousel
 $('.carousel').carousel({interval: 300});

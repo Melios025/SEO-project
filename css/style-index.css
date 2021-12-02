@@ -70,3 +70,10 @@
   color: #404040;
 }
 /* end-carousel */
+
+/* footer */
+#main-footer #logo-website{
+    height: 200px;
+    width: 200px;    
+}
+/* end-footer */

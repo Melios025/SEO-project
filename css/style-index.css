@@ -30,6 +30,9 @@
 /*  end-Header  */
 
 /* carousel */
+.carousel{
+    padding-top: 100px;
+}
 .carousel > .carousel-item {
     height: 300px;
 }

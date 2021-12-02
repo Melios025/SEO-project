@@ -48,18 +48,18 @@
                                 <tr>
                                     <td>
                                         <figure class="itemside align-items-center">
-                                            <div class="aside"><img src="#" class="img-sm"></div>
+                                            <div class="aside"><img src="#" class="img-holder"></div>
                                             <figcaption class="info"> <a href="#" class="text-dark">Tên sản phẩm</a>
                                             </figcaption>
                                         </figure>
                                     </td>
                                     <td>
-                                        <input type="number" name="soLuongCart">
+                                        <input type="number" min="1" name="soLuongCart" placeholder="1">
                                     </td>
                                     <td>
                                         <div class="price-wrap"></div>
                                     </td>
-                                    <td class="text-right d-none d-md-block"> </a> <a href="" class="btn btn-light">
+                                    <td class="text-right d-none d-md-block"> </a> <a href="" class="btn xoa">
                                             Xóa</a> </td>
                                 </tr>
                             </tbody>
@@ -71,10 +71,12 @@
                 <div class="card mb-3">
                     <div class="card-body">
                         <form>
-                            <div class="form-group"> <label>Mã giảm giá</label>
+                            <div class="form-group"> <label><b>Mã giảm giá</b></label>
                                 <div class="input-group"> <input type="text" class="form-control coupon" name=""
-                                        placeholder="Coupon code"> <span class="input-group-append"> <button
-                                            class="btn btn-primary btn-apply coupon">Áp dụng</button> </span> </div>
+                                        placeholder="Coupon code">
+                                    <span class="input-group-append">
+                                        <button class="btn coupon">Áp dụng</button> </span>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -91,10 +93,11 @@
                         </dl>
                         <dl class="dlist-align">
                             <dt>Tổng tiền:</dt>
-                            <dd class="text-right text-dark b ml-3"><strong></strong></dd>
+                            <dd class="text-right text-dark ml-3"><strong></strong></dd>
                         </dl>
-                        <hr> <a href="#" class="btn btn-out btn-primary btn-square btn-main" data-abc="true">Thanh toán</a> <a href="#" class="btn btn-out btn-success btn-square btn-main mt-2"
-                            >Quay lại </a>
+                        <hr>
+                        <a href="#" id="checkout" class=" btn btn-outline-dark">Thanh toán</a>
+                        <a href="#" id="backShop" class="btn btn-outline-secondary mt-2">Quay lại </a>
                     </div>
                 </div>
             </aside>

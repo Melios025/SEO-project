@@ -24,13 +24,7 @@
 
 <body>
     <div id="header"></div>
-    <!-- <div class="container-fluid p-3 ">
-        <ul class="nav float-right navCart">
-            <li class="nav-item"><a class="nav-link border here" href="#">Giỏ hàng</a></li>
-            <li class="nav-item disabled"><a class="nav-link border" href="#">Địa chỉ</a></li>
-            <li class="nav-item disabled"><a class="nav-link border" href="#">Thanh toán</a></li>
-        </ul>
-    </div> -->
+
     <div class="container-fluid">
         <div class="row">
             <aside class="col-lg-9">
@@ -47,19 +41,20 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <figure class="itemside align-items-center">
-                                            <div class="aside"><img src="#" class="img-holder"></div>
-                                            <figcaption class="info"> <a href="#" class="text-dark">Tên sản phẩm</a>
+                                        <figure class="itemside">
+                                            <img src="#" class="imgHolder">
+                                            <figcaption> <a href="#" class="info text-dark"><b>Tên sản phẩm</b></a>
+                                                <p class="moreInfo">Thông tin thêm</p>
                                             </figcaption>
                                         </figure>
                                     </td>
                                     <td>
-                                        <input type="number" min="1" name="soLuongCart" placeholder="1">
+                                        <input type="number" min="1" name="quantityItem" placeholder="1">
                                     </td>
                                     <td>
-                                        <div class="price-wrap"></div>
+                                        <div class="priceWrap">2.000.000đ</div>
                                     </td>
-                                    <td class="text-right d-none d-md-block"> </a> <a href="" class="btn xoa">
+                                    <td class="text-right d-none d-md-block"> </a> <a href="" class="btn delete">
                                             Xóa</a> </td>
                                 </tr>
                             </tbody>
@@ -73,7 +68,7 @@
                         <form>
                             <div class="form-group"> <label><b>Mã giảm giá</b></label>
                                 <div class="input-group"> <input type="text" class="form-control coupon" name=""
-                                        placeholder="Coupon code">
+                                        placeholder="Mã giảm giá">
                                     <span class="input-group-append">
                                         <button class="btn coupon">Áp dụng</button> </span>
                                 </div>

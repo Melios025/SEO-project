@@ -3,12 +3,12 @@
     margin-top: 70px
 }
 
-.img-holder {
+.imgHolder {
     width: 80px;
     height: 80px
 }
 
-.itemside .info {
+.itemside .info, .moreInfo {
     padding-left: 15px;
     padding-right: 7px
 }
@@ -45,15 +45,15 @@ a {
     background-color: burlywood;
     color: white;
 }
-.xoa {
+.delete {
     color: #ffffff;
-    background-color: burlywood;
-    border-color: #f8f9fa;
+    background-color: rgb(255, 0, 0);
+
     font-size: 12px
 }
 
-.xoa:hover {
+.delete:hover {
     color: black;
-    background-color: white;
+    background-color: rgb(190, 82, 82);
 }
 

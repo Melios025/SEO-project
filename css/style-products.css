@@ -64,3 +64,13 @@ ul, #myUL {
   .caret:hover:before {
     transform: scaleX(1);
   }
+
+/* ============= card =================*/
+.card-img{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.card-body .d-flex{
+  padding-top: 10px;
+}

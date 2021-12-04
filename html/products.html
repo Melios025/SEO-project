@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAME ON | PC Components</title>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- style index-->
     <link rel="stylesheet" href="../css/style-index.css">
     <link rel="stylesheet" href="../css/style-products.css">
@@ -20,75 +20,732 @@
     </script>
 
 </head>
-<body>
+<div>
     <!-- Header-->
-    <div id="header"></div>
-    <div class="container" style = "padding: 40px">
-        <div class="row">
-            <div class = "col-3">
-                Nhóm sản phẩm
-                <ul id="myUL">
-                    <li><span class="caret">CPU</span>
-                        <ul class="nested">
-                            <li>CPU AMD</li>
-                            <li>CPU Intel</li>
-                        </ul>
-                    </li>
-                    <li><span class="caret">Case</span>
-                        <ul class="nested">
-                            <li>Corsair</li>
-                            <li>Nzxt</li>
-                        </ul>
-                    </li>
-                    <li><span class="caret">Card Màn Hình</span>
-                        <ul class="nested">
-                            <li>AMD</li>
-                            <li>NVIDIA</li>
-                        </ul>
-                    </li>
-                    <li><span class="caret">Mainboard</span>
-                        <ul class="nested">
-                            <li>Asrock</li>
-                            <li>Gigabyte</li>
-                        </ul>
-                    </li>
-                    <li><span class="caret">Nguồn</span>
-                        <ul class="nested">
-                            <li>Corsair</li>
-                            <li>Superflower</li>
-                        </ul>
-                    </li>
-                    <li><span class="caret">RAM</span>
-                        <ul class="nested">
-                            <li>Corsair</li>
-                            <li>Gskill</li>
-                        </ul>
-                    </li>
-                    <li><span class="caret">Storage</span>
-                        <ul class="nested">
-                            <li>HDD</li>
-                            <li>SSD</li>
-                        </ul>
-                    </li>
-                    <li><span class="caret">Tản nhiệt</span>
-                        <ul class="nested">
-                            <li>Tản nhiệt nước</li>
-                            <li>Tản nhiệt khí</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class = "col" style = "padding-left: 50px;">
-                Danh mục
-            </div>
+    <div id="header" style = "padding: 30px"></div>
+    <div class = "row">
+        <div class="d-flex align-items-start">
+                <div class = "col-1">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-case-tab" data-bs-toggle="pill" data-bs-target="#v-pills-case" type="button" role="tab" aria-controls="v-pills-case" aria-selected="true">Case</button>
+                        <button class="nav-link" id="v-pills-cooler-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cooler" type="button" role="tab" aria-controls="v-pills-cooler" aria-selected="false">Cooler</button>
+                        <button class="nav-link" id="v-pills-cpu-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cpu" type="button" role="tab" aria-controls="v-pills-cpu" aria-selected="false">CPU</button>
+                        <button class="nav-link" id="v-pills-gpu-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gpu" type="button" role="tab" aria-controls="v-pills-gpu" aria-selected="false">Card Màn Hình</button>
+                        <button class="nav-link" id="v-pills-main-tab" data-bs-toggle="pill" data-bs-target="#v-pills-main" type="button" role="tab" aria-controls="v-pills-main" aria-selected="false">Main</button>
+                        <button class="nav-link" id="v-pills-psu-tab" data-bs-toggle="pill" data-bs-target="#v-pills-psu" type="button" role="tab" aria-controls="v-pills-psu" aria-selected="false">Nguồn</button>
+                        <button class="nav-link" id="v-pills-ram-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ram" type="button" role="tab" aria-controls="v-pills-ram" aria-selected="false">Ram</button>
+                        <button class="nav-link" id="v-pills-storage-tab" data-bs-toggle="pill" data-bs-target="#v-pills-storage" type="button" role="tab" aria-controls="v-pills-storage" aria-selected="false">Ổ cứng</button>
+                    </div>
+                </div>
+                <div class = "col-10">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <!--Case-->
+                        <div class="tab-pane fade show active" id="v-pills-case" role="tabpanel" aria-labelledby="v-pills-case-tab">
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/case/corsair/4000d_airflow_black/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/case/corsair/4000d_airflow_white/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/case/nzxt/h210_white/1.jfif" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/case/nzxt/h710_white/1.jfif" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Cooler-->
+                        <div class="tab-pane fade" id="v-pills-cooler" role="tabpanel" aria-labelledby="v-pills-cooler-tab">
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/cooler/aio/corsair/h100_rgb/1.jfif" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/cooler/aio/corsair/h100i_elite/1.jfif" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/cooler/aio/nzxt/z53_oled/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/cooler/air_cooling/coolermaster/hyper212_argb/1.jfif" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CPU-->
+                        <div class="tab-pane fade" id="v-pills-cpu" role="tabpanel" aria-labelledby="v-pills-messages-cpu">
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/cpu/amd/3300x/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/cpu/amd/5600x/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/cpu/intel/10105f/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/cpu/intel/11400f/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--GPU-->
+                        <div class="tab-pane fade" id="v-pills-gpu" role="tabpanel" aria-labelledby="v-pills-settings-gpu">
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/gpu/amd/5700xt/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/gpu/amd/6600xt/msi/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/gpu/nvidia/2070/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/gpu/nvidia/3060ti/asus/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Main-->
+                        <div class="tab-pane fade" id="v-pills-main" role="tabpanel" aria-labelledby="v-pills-settings-main">
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/main/asrock/b450m/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/main/asrock/b460m/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/main/gigabyte/b365m/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/main/gigabyte/b560m/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--PSU-->
+                        <div class="tab-pane fade" id="v-pills-psu" role="tabpanel" aria-labelledby="v-pills-messages-psu">
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/psu/corsair/cv550/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/psu/corsair/cx650f/1.png" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/psu/superflower/850w/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/psu/superflower/850w_argb/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--RAM-->
+                        <div class="tab-pane fade" id="v-pills-ram" role="tabpanel" aria-labelledby="v-pills-settings-ram">
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/ram/corsair/vengeance/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/ram/corsair/vengeance_rgb/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/ram/gskill/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/ram/gskill/2.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Storage-->
+                        <div class="tab-pane fade" id="v-pills-storage" role="tabpanel" aria-labelledby="v-pills-settings-storage">
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/storage/hdd/1tb/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/storage/hdd/2tb/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/storage/ssd/250gb/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                              <button class="btn btn-primary" >Thông tin</button>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class ="col-4">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="../images/storage/ssd/500gb/1.jpg" class="card-img" alt="case1">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <div class = "d-flex justify-content-end">
+                                                <button class="btn btn-primary" >Thông tin</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="../images/stk-bn-right.png" alt="Ads Banner">
+                </div>
         </div>
-
     </div>
     <!-- footer-->
     <div id="footer"></div>      
 
     <script src="../js/main.js"></script>     
-    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../js/products.js"></script>
 </body>
 </html>

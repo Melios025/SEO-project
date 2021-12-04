@@ -1,13 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <!-- style cart -->
     <link rel="stylesheet" href="/css/style-cart.css">
+    <!-- style index-->
+    <link rel="stylesheet" href="../css/style-index.css">
+    <!-- icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
 </head>
+
 <body>
-    
+    <div id="header"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-9">
+                <div class="card">
+                    <div class="table-responsive">
+                        <table class="table table-borderless table-shopping-cart">
+                            <thead>
+                                <tr class=" text-uppercase">
+                                    <th scope="col">Tên</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Giá</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <figure class="itemside">
+                                            <img src="#" class="imgHolder">
+                                            <figcaption> <a href="#" class="info text-dark"><b>Tên sản phẩm</b></a>
+                                                <p class="moreInfo">Thông tin thêm</p>
+                                            </figcaption>
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <input type="number" min="1" name="quantityItem" placeholder="1">
+                                    </td>
+                                    <td>
+                                        <div class="priceWrap">2.000.000đ</div>
+                                    </td>
+                                    <td class="text-right d-none d-md-block"> </a> <a href="" class="btn delete">
+                                            Xóa</a> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </aside>
+            <aside class="col-lg-3">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group"> <label><b>Mã giảm giá</b></label>
+                                <div class="input-group"> <input type="text" class="form-control coupon" name=""
+                                        placeholder="Mã giảm giá">
+                                    <span class="input-group-append">
+                                        <button class="btn coupon">Áp dụng</button> </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <dl class="dlist-align">
+                            <dt>Tổng giá sản phẩm:</dt>
+                            <dd class="text-right ml-3"></dd>
+                        </dl>
+                        <dl class="dlist-align">
+                            <dt>Giảm:</dt>
+                            <dd class="text-right text-danger ml-3"></dd>
+                        </dl>
+                        <dl class="dlist-align">
+                            <dt>Tổng tiền:</dt>
+                            <dd class="text-right text-dark ml-3"><strong></strong></dd>
+                        </dl>
+                        <hr>
+                        <a href="#" id="checkout" class=" btn btn-outline-dark">Thanh toán</a>
+                        <a href="#" id="backShop" class="btn btn-outline-secondary mt-2">Quay lại </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <script src="../js/cart.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
 </body>
+
 </html>

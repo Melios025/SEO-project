@@ -3,49 +3,58 @@
     background-color:burlywood;
     height: 50px;
 }
-
+ 
 #main-nav .navbar{
     height: 80px;
-    font-size: 20px;   
+    font-size: 20px;
+    z-index: 10;
 }
-
+ 
 #main-nav .navbar li{
     padding-left: 15px;
     padding-right: 15px;
 }
-
-#logo-website{
+ 
+#main-nav #logo-website{
     height: 80px;
     width: 80px;
 }
-
-.dropdown:hover>.dropdown-menu {
+ 
+.dropdown:hover .dropdown-menu {
     display: block;
+    background-color: burlywood;
   }
-  
-.dropdown>.dropdown-toggle:active {
+ 
+.dropdown .dropdown-toggle:active {
     pointer-events: none;
 }
-
+ 
+ 
 /*  end-Header  */
-
+ 
 /* carousel */
+.carousel
+{
+   margin-top:50px;
+   z-index: 5;
+}
+ 
 .carousel > .carousel-item {
     height: 300px;
 }
-  
+ 
 .carousel-inner > .carousel-item > img{ 
     margin:auto; 
 }
-
+ 
 .carousel > .carousel-indicators > li {
     background-color:bisque;
 }
-
+ 
 .carousel > .carousel-indicators .active {
     background-color:#404040;
 }
-
+ 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 60px;
@@ -56,14 +65,14 @@
   border: 1px solid black;
   background-image: none;
 }
-
+ 
 .carousel-control-next-icon:after
 {
   content: '>';
   font-size: 34px;
   color:#404040;
 }
-
+ 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 34px;
@@ -71,6 +80,7 @@
 }
 /* end-carousel */
 
+/* ========================= Categories ============================ */
 /* featured categories */
 .categories {
     margin: 100px auto;
@@ -115,13 +125,14 @@
     margin-top: 20px;
 }
 /* end-features categories */
+/* ========================= End-Categories ============================ */
 
 /* brands */
 .brands {
     margin: 100px auto;
 }
 .col-logo {
-    width: 400px;
+    width: 300px;
 }
 .col-logo img {
     width: 100%;
@@ -131,7 +142,13 @@
     transform: scale(1.2);
 }
 /* end-brands */
-
+ 
+/* body */
+ 
+ 
+/* end-body */
+ 
+ 
 /* footer */
 #main-footer #logo-website{
     height: 150px;

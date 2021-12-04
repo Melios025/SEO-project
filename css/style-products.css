@@ -66,6 +66,19 @@ ul, #myUL {
   }
 
 /* ============= card =================*/
+.card{
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  -moz-transition: opacity 4s; /* Firefox */
+  -webkit-transition: opacity 4s; /* Safari and Chrome */
+  -o-transition: opacity 4s; /* Opera */
+  transition: opacity 4s;
+}
+
 .card-img{
   margin-top: 20px;
   margin-left: 10px;
@@ -74,3 +87,4 @@ ul, #myUL {
 .card-body .d-flex{
   padding-top: 10px;
 }
+

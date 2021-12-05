@@ -24,38 +24,51 @@
 
 <body>
     <div id="header"></div>
-
+    </nav>
     <div class="container-fluid">
+        <div class="row ">
+            <!-- bread crumb -->
+            <div class="col-lg-9"></div>
+            <div class="col-lg-3">
+                <nav class="float-right" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- table product -->
         <div class="row">
             <aside class="col-lg-9">
                 <div class="card">
-                    <div class="table-responsive">
+                    <div class="table-responsive-lg">
                         <table class="table table-borderless table-shopping-cart">
                             <thead>
-                                <tr class=" text-uppercase">
-                                    <th scope="col">Tên</th>
-                                    <th scope="col">Số lượng</th>
-                                    <th scope="col">Giá</th>
+                                <tr class="small text-uppercase border-0">
+                                    <th scope="col" class="border-0 th-lg">Product</th>
+                                    <th scope="col" class="border-0 th-sm" width="200">Số lượng</th>
+                                    <th scope="col" class="border-0 th-sm" width="200">Giá</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>
-                                        <figure class="itemside">
-                                            <img src="#" class="imgHolder">
-                                            <figcaption> <a href="#" class="info text-dark"><b>Tên sản phẩm</b></a>
-                                                <p class="moreInfo">Thông tin thêm</p>
+                                <tr >
+                                    <td >
+                                        <figure class="itemside ">
+                                            <img src="" class="imgHolder">
+                                            <figcaption> <a href="#" class="info text-dark text-justify"><b>RTX™ 3060 Ti GAMING X 8Gx</b></a>
+                                                <p class=" moreInfo small ">Bảo hành 12 tháng <br>Mua xong khỏi trả lại</p>
                                             </figcaption>
                                         </figure>
                                     </td>
                                     <td>
-                                        <input type="number" min="1" name="quantityItem" placeholder="1">
+                                        <input style="width:75%" type="number" min="0" name="quantityItem" placeholder="1">
                                     </td>
                                     <td>
                                         <div class="priceWrap">2.000.000đ</div>
                                     </td>
-                                    <td class="text-right d-none d-md-block"> </a> <a href="" class="btn delete">
-                                            Xóa</a> </td>
+                                    
                                 </tr>
                             </tbody>
                         </table>

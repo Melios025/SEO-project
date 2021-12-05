@@ -1,3 +1,14 @@
+/* page */
+#products-page {
+  margin-top:50px;
+}
+
+/*list*/
+#products-page .nav .nav-link{
+  padding-top: 10px;
+
+}
+
 /* Remove default bullets */
 ul, #myUL {
     list-style-type: none;

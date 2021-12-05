@@ -18,6 +18,7 @@
 #main-nav #logo-website{
     height: 80px;
     width: 80px;
+    margin-left: 10px;
 }
  
 .dropdown:hover .dropdown-menu {

@@ -163,4 +163,18 @@
         background-color:whitesmoke;
     }
  }
+
+@media only screen and (max-width: 768px) {
+    #google-map{
+        width: 150px ;
+        height: 150px ;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #google-map{
+        width: 350px ;
+        height: 250px ;
+    }
+}
+
 /* end-mobile */

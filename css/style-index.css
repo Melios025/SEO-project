@@ -5,19 +5,19 @@
 }
 
 #main-nav .navbar{
-    height: 80px;
+    height: 100px;
     font-size: 20px;   
 }
 
 #main-nav .navbar li{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 #logo-website{
-    height: 80px;
-    width: 80px;
-    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
 }
 
 .dropdown:hover>.dropdown-menu {
@@ -31,6 +31,13 @@
 /*  end-Header  */
 
 /* carousel */
+.carousel
+{
+   margin-top:80px;
+   /*z-index: 5;*/
+
+}
+ 
 .carousel > .carousel-item {
     height: 300px;
 }
@@ -70,6 +77,7 @@
   font-size: 34px;
   color: #404040;
 }
+
 /* end-carousel */
 
 /* ========================= Categories ============================ */
@@ -143,9 +151,31 @@
 /* end-footer */
 
 /* mobile */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
     #main-nav #navbarNav{
         background-color:whitesmoke;
     }
- }
+    #main-nav .navbar li{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #google-map{
+        width: 150px ;
+        height: 150px ;
+    }
+    #main-nav .navbar li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #google-map{
+        width: 350px ;
+        height: 250px ;
+    }
+}
+
 /* end-mobile */

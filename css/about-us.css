@@ -1,0 +1,60 @@
+#about-us-page {
+    margin-top: 80px;
+  }
+.te_title_2  {
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+    padding-right: 70px;
+    text-align: center;
+    padding-top: 60px;
+}
+body {
+        margin: 0;
+        font-family: "Open Sans", "Odoo Unicode Support Noto", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: white;
+    }
+    p {
+        display: block;
+        margin: 0px auto;
+        font-size: 0.9375rem;
+        color: inherit;
+        font-family: inherit;
+        line-height: 180%;
+    }
+
+    #post {
+        margin-bottom: 16px !important;
+        margin-left: 16px !important;
+        width: 800px;
+        height: 80px;
+        
+        float: left;
+     }
+     #sidebar {
+        margin-bottom: 16px !important;
+        margin-left: 16px !important;
+        width: 660px;
+        height: 100px;
+        
+        float: right;
+       }
+       #sum-post-sidebar {
+        margin-bottom: 16px !important;
+        margin-left: 16px !important;
+        width: 1500px;
+        height: 250px;
+        
+       }
+    h4 {
+        margin-left: 16px;
+    }
+    .bot {
+        text-align: center;
+        padding-top: 50px;
+    }

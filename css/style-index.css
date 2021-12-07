@@ -145,11 +145,13 @@
 
 /* brands */
 .brands {
-    margin: 100px auto;
+    margin: 50px auto;
 }
+/*
 .col-logo {
     width: 400px;
 }
+*/
 .col-logo img {
     width: 100%;
     cursor: pointer;

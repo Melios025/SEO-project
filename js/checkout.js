@@ -7,7 +7,7 @@ let storageList = JSON.parse(window.localStorage.getItem('items'));
 let str = "";
 let total = 0;
 if (storageList.length == 0) {
-  str += '<tr><td>Giỏ hàng bạn chưa có gì</td></tr>';
+  str += '<tr><td>Nothing here</td></tr>';
 }
 else {
   for (var i = 0, len = storageList.length; i < len; i++) {
@@ -20,20 +20,20 @@ else {
     str += '     <h6 class="my-0">' + storageList[i].name + '</h6>'
     str += '     <small class="text-muted"></small>'
     str += ' </div>'
-    str += ' <span class="text-muted">' + totalEach + '</span> '
+    str += ' <span class="text-muted">' + totalEach.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + 'đ</span> '
     str += ' </li> '
 
   }
   total = total.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + 'đ';
   str += '<li class="list-group-item d-flex justify-content-between bg-light">'
   str += '   <div class="text-success">'
-  str += '      <h6 class="my-0">Mã giảm giá</h6>'
+  str += '      <h6 class="my-0">Coupon</h6>'
   str += '     <small>'+localStorage.getItem('coupon')+'</small>'
   str += ' </div>'
   str += ' <span class="text-success">- 0đ</span>'
   str += '  </li>'
   str += ' <li class="list-group-item d-flex justify-content-between">'
-  str += ' <span>Tổng (VND)</span>'
+  str += ' <span>Total (VND)</span>'
   str += ' <strong id="tongtien">' + total + '</strong>'
   str += ' </li>'
 }

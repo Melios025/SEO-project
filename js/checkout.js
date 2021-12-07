@@ -33,7 +33,7 @@ else {
   str += ' <span class="text-success">- 0đ</span>'
   str += '  </li>'
   str += ' <li class="list-group-item d-flex justify-content-between">'
-  str += ' <span>Tổng (VND)</span>'
+  str += ' <span>Total (VND)</span>'
   str += ' <strong id="tongtien">' + total + '</strong>'
   str += ' </li>'
 }

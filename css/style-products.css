@@ -12,11 +12,6 @@ a {
   text-decoration: none !important
 }
 
-/*list*/
-#products-page .nav .nav-link{
-  padding-top: 10px;
-
-}
 /* ============= card =================*/
 .card{
   cursor: pointer;

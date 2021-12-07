@@ -19,7 +19,15 @@ a {
     display: flex;
     width: 100%
 }
+.dlist-align {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
 
+[class*="dlist-"] {
+    margin-bottom: 5px
+}
 
 .coupon {
     border-radius: 1px

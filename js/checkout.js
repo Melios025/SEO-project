@@ -5,7 +5,8 @@ $("#footer").load("../assets/share/footer.html");
 
 let storageList = JSON.parse(window.localStorage.getItem('items'));
 let str = "";
-let total = 0;
+let total = 0; 
+internationalNumberFormat = new Intl.NumberFormat('en-US');
 if (storageList.length == 0) {
   str += '<tr><td>Nothing here</td></tr>';
 }
@@ -20,11 +21,10 @@ else {
     str += '     <h6 class="my-0">' + storageList[i].name + '</h6>'
     str += '     <small class="text-muted"></small>'
     str += ' </div>'
-    str += ' <span class="text-muted">' + totalEach.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + 'đ</span> '
+    str += ' <span class="text-muted">' +internationalNumberFormat.format(totalEach).toString() + 'đ </span> '
     str += ' </li> '
-
   }
-  total = total.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + 'đ';
+  total=internationalNumberFormat.format(total).toString() + 'đ';
   str += '<li class="list-group-item d-flex justify-content-between bg-light">'
   str += '   <div class="text-success">'
   str += '      <h6 class="my-0">Coupon</h6>'

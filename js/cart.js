@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
     // load header when have id header
     $("#header").load("../assets/share/headernav.html");
     // load header when have id footer
@@ -18,7 +18,7 @@ $('.applyCoupon').click(function () {
     $('.giam').text("0đ");
 })
     
-    
+$(document).ready(function () {    
 });
 
 
@@ -42,33 +42,35 @@ function process() {
     if (storageList.length == 0) {
         str += '<tr><td>Nothing here</td></tr>';
     }
-    else {
-        for (var i = 0, len = storageList.length; i < len; i++) {
-            let gia = parseInt(storageList[i].price);
-            let totalEach = gia * (storageList[i].no);
-            total += totalEach;
-            str += '<tr>';
-            str += '<td>';
-            str += '<figure class="itemside ">'
-            str += '<img src="' + storageList[i].img + '" class="imgHolder">'
-            str += '<figcaption> <a href="#" class="info text-dark text-justify"><b>' + storageList[i].name + '</b></a>';
-            str += ' <p class=" moreInfo small ">' + storageList[i].info + '</p>'
-            str += ' </figcaption>'
-            str += '</figure>'
-            str += ' </td >'
-            str += '<td>'
-            str += '<h4 class="ms-4">' + storageList[i].no + '</h4>'
-            str += ' </td>'
-            str += '<td>'
-            str += '<div class="priceWrap">' + totalEach.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + 'đ</div>'
-            str += '</td>'
-            str += '<td><button onclick="lsdel(\'items\',\'' + i + '\');" class="xoa btn btn-outline-danger p-1">Remove</button></td>';
-            str += '</tr > '
-        }
-        total = total.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + 'đ';
-    }
+     else {
+         for (var i = 0, len = storageList.length; i < len; i++) {
+             let gia = parseInt(storageList[i].price);
+             let totalEach = gia * (storageList[i].no);
+             total += totalEach;
+             str += '<tr>';
+             str += '<td>';
+             str += '<figure class="itemside ">'
+             str += '<img src="' + storageList[i].img + '" class="imgHolder">'
+             str += '<figcaption> <a href="#" class="info text-dark text-justify"><b>' + storageList[i].name + '</b></a>';
+             str += ' <p class=" moreInfo small ">' + storageList[i].info + '</p>'
+             str += ' </figcaption>'
+             str += '</figure>'
+             str += ' </td >'
+             str += '<td>'
+             str += '<h4 class="ms-4">' + storageList[i].no + '</h4>'
+             str += ' </td>'
+             str += '<td>'
+             str += '<div class="priceWrap">' + totalEach.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + 'đ</div>'
+             str += '</td>'
+             str += '<td><button onclick="lsdel(\'items\',\'' + i + '\');" class="xoa btn btn-outline-danger p-1">Remove</button></td>';
+             str += '</tr > '
+         }
+         internationalNumberFormat = new Intl.NumberFormat('en-US')
+         total = internationalNumberFormat.format(total).toString() + 'đ';
+      
+     }
 
-    $('.total, .total-last').html(total);
-    $('.product-holder').html(str);
+     $('.total, .total-last').html(total);
+     $('.product-holder').html(str);
 }
 

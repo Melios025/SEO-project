@@ -40,7 +40,7 @@ function process() {
     let str = "";
     let total = 0;
     if (storageList.length == 0) {
-        str += '<tr><td>Giỏ hàng bạn chưa có gì</td></tr>';
+        str += '<tr><td>Nothing here</td></tr>';
     }
     else {
         for (var i = 0, len = storageList.length; i < len; i++) {
@@ -62,7 +62,7 @@ function process() {
             str += '<td>'
             str += '<div class="priceWrap">' + totalEach.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + 'đ</div>'
             str += '</td>'
-            str += '<td><button onclick="lsdel(\'items\',\'' + i + '\');" class="xoa btn btn-outline-danger p-1">Xóa</button></td>';
+            str += '<td><button onclick="lsdel(\'items\',\'' + i + '\');" class="xoa btn btn-outline-danger p-1">Remove</button></td>';
             str += '</tr > '
         }
         total = total.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + 'đ';

@@ -29,7 +29,7 @@
         <div class="row pt-5">
             <div class="col-md-4 order-md-2 mb-4">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="text-muted">Giỏ hàng của bạn</span>
+                    <span class="text-muted">Your cart</span>
                     <span class="badge badge-secondary badge-pill">1</span>
                 </h4>
                 <ul class="listProduct  list-group mb-3">
@@ -54,28 +54,28 @@
                 </ul>
             </div>
             <div class="col-md-8 order-md-1">
-                <h4 class="mb-3">Thanh toán</h4>
+                <h4 class="mb-3">Checkout</h4>
                 <form class="needs-validation" novalidate>
                     <div class="row">
                         <div class="col-md-12 mb-3">
-                            <label for="firstName">Tên*</label>
+                            <label for="firstName">Name*</label>
                             <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                             <div class="invalid-feedback">
-                                Tên không được để trống
+                                Name must be filled
                             </div>
                         </div>
 
                     </div>
 
                     <div class="mb-3">
-                        <label for="sdt">Số điện thoại*</label>
+                        <label for="sdt">Phone number*</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">+84</span>
                             </div>
                             <input type="text" class="form-control" id="username" required pattern="[0-9]+">
                             <div class="invalid-feedback" style="width: 100%;">
-                                Số điện thoại không hợp lệ
+                                Phone number must be filled
                             </div>
                         </div>
                     </div>
@@ -84,13 +84,13 @@
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email">
                         <div class="invalid-feedback">
-                            Email không hợp lệ
+                            Email invalid
                         </div>
 
                     </div>
 
                     <div class="mb-3">
-                        <label for="address">Địa chỉ*</label>
+                        <label for="address">Address*</label>
                         <input type="text" class="form-control" id="address" required="">
                         <div class="invalid-feedback">
                             Please enter your shipping address.
@@ -99,9 +99,9 @@
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="country">Tỉnh*</label>
+                            <label for="country">City*</label>
                             <select class="form-select d-block w-100" id="country" required="">
-                                <option value="">Chọn...</option>
+                                <option value="">Choose...</option>
                                 <option value="An Giang">An Giang
                                 <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
                                 <option value="Bắc Giang">Bắc Giang
@@ -169,13 +169,13 @@
                                 <option value="TP  HCM">TP HCM
                             </select>
                             <div class="invalid-feedback">
-                                Tỉnh không được để trống
+                                City must be selected
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="huyen">Huyện*</label>
+                            <label for="huyen">District*</label>
                             <select class="form-select d-block w-100" id="huyen" required="">
-                                <option value="">Chọn...</option>
+                                <option value="">Choose...</option>
                                 <option>Quận 1</option>
                                 <option>Quận 2</option>
                                 <option>Quận 3</option>
@@ -202,66 +202,66 @@
                                 <option>TP. Thủ Đức</option>
                             </select>
                             <div class="invalid-feedback">
-                                Huyện không được để trống
+                                District must be selected
                             </div>
                         </div>
                  
                     </div>
                     <hr class="mb-4">
-    <div style="color: red;">* Bắt buộc</div>
+    <div style="color: red;">* Require</div>
                     <hr class="mb-4">
 
-                    <h4 class="mb-3">Phương thức thanh toán</h4>
+                    <h4 class="mb-3">Method payment</h4>
 
                     <div class="d-block my-3">
                         <div class="custom-control custom-radio">
                             <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked=""
                                 required="">
-                            <label class="custom-control-label" for="credit">Thẻ tín dụng</label>
+                            <label class="custom-control-label" for="credit">Credit card</label>
                         </div>
                         <div class="custom-control custom-radio">
                             <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
                                 required="">
-                            <label class="custom-control-label" for="debit">Thẻ ghi nợ</label>
+                            <label class="custom-control-label" for="debit">Debit card</label>
                         </div>
  
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="card-name">Tên thẻ</label>
+                            <label for="card-name">Name</label>
                             <input type="text" class="form-control" id="card-name"required="">
-                            <small class="text-muted">Tên trên thẻ viết hoa không dấu</small>
+                            <small class="text-muted">Name on the card</small>
                             <div class="invalid-feedback">
-                                Tên thẻ không được để trống
+                                Card's must be filled
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="card-number">Số thẻ</label>
+                            <label for="card-number">Card number</label>
                             <input type="text" class="form-control" id="card-number" required="" pattern="[0-9]+">
                             <div class="invalid-feedback">
-                                Số thẻ không hợp lệ
+                                Invalid card number
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 mb-3">
-                            <label for="card-expiration">Hết hạn</label>
+                            <label for="card-expiration">Expiration date</label>
                             <input type="date" class="form-control" id="card-expiration" placeholder="mm/yy" required="">
                             <div class="invalid-feedback">
-                                Ngày hết hạn không được để trống
+                                Expiration date must be filled
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="cc-expiration">CVV</label>
                             <input type="text" class="form-control" id="cc-cvv" placeholder="" required="" pattern="[0-9]+">
-                            <small class="text-muted">3 số bảo mật sau thẻ</small>
+                            <small class="text-muted">3 number behind your card</small>
                             <div class="invalid-feedback">
-                                Mã cvv không hợp lệ
+                                CVV invalid
                             </div>
                         </div>
                     </div>
                     <hr class="mb-4">
-                    <button class="btn btn-outline-success btn-lg btn-block" type="submit">Thanh toán</button>
+                    <button class="btn btn-outline-success btn-lg btn-block" type="submit">Checkout</button>
                 </form>
             </div>
         </div>

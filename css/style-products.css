@@ -1,7 +1,15 @@
 /* page */
 
 #products-page {
-  margin-top: 80px;
+  margin-top: 70px;
+}
+
+#products-page .container{
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none !important
 }
 
 /*list*/

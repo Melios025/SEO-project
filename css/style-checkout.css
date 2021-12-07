@@ -1,0 +1,6 @@
+.container-fluid {
+    padding-top: 70px
+}
+.container-fluid .container {
+    margin-top: 30px
+}

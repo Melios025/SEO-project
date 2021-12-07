@@ -1,6 +1,10 @@
 
 .container-fluid {
-    margin-top: 70px
+    padding-top: 70px
+}
+
+.container-fluid .container{
+    margin-top: 30px;
 }
 
 .imgHolder {

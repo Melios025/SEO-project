@@ -27,94 +27,97 @@
     <div id="header"></div>
     
     <div class="container-fluid">
+        <!--bread crumb in comment -->
         <div class="row ">
-            <!-- bread crumb -->
             <div class="col-lg-9"></div>
             <div class="col-lg-3 ms-3">
                 <nav class="float-right" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../html/index.html">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Cart</li>
                     </ol>
                 </nav>
             </div>
         </div>
-        <!-- table product -->
-        <div class="row">
-            <aside class="col-lg-8">
-                <div class="card">
-                    <div class="table-responsive-lg">
-                        <table class="table table-borderless table-shopping-cart">
-                            <thead>
-                                <tr class="small text-uppercase border-0">
-                                    <th scope="col" class="border-0 th-lg">Product</th>
-                                    <th scope="col" class="border-0 th-sm" width="200">Quantity</th>
-                                    <th scope="col" class="border-0 th-sm" width="200">Price</th>
-                                    <td scope='col'></td>
+        <div class="container">
+            <!-- table product -->
+            <div class="row mt-3">
+                <aside class="col-lg-8">
+                    <div class="card">
+                        <div class="table-responsive-lg">
+                            <table class="table table-borderless table-shopping-cart">
+                                <thead>
+                                    <tr class="small text-uppercase border-0">
+                                        <th scope="col" class="border-0 th-lg">Product</th>
+                                        <th scope="col" class="border-0 th-sm" width="200">Quantity</th>
+                                        <th scope="col" class="border-0 th-sm" width="200">Price</th>
+                                        <td scope='col'></td>
 
-                                </tr>
-                            </thead>
-                            <tbody class="product-holder">
-                                <!-- <tr >
-                                    <td >
-                                        <figure class="itemside ">
-                                            <img src="" class="imgHolder">
-                                            <figcaption> <a href="#" class="info text-dark text-justify"><b>RTX™ 3060 Ti GAMING X 8Gx</b></a>
-                                                <p class=" moreInfo small ">Bảo hành 12 tháng <br>Mua xong khỏi trả lại</p>
-                                            </figcaption>
-                                        </figure>
-                                    </td>
-                                    <td>
-                                       <h4 class="ms-4">12</h4>
-                                    </td>
-                                    <td>
-                                        <div class="priceWrap">2.000.000đ</div>
+                                    </tr>
+                                </thead>
+                                <tbody class="product-holder">
+                                    <!-- <tr >
+                                        <td >
+                                            <figure class="itemside ">
+                                                <img src="" class="imgHolder">
+                                                <figcaption> <a href="#" class="info text-dark text-justify"><b>RTX™ 3060 Ti GAMING X 8Gx</b></a>
+                                                    <p class=" moreInfo small ">Bảo hành 12 tháng <br>Mua xong khỏi trả lại</p>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td>
+                                        <h4 class="ms-4">12</h4>
+                                        </td>
+                                        <td>
+                                            <div class="priceWrap">2.000.000đ</div>
+                                            
+                                        </td>
+                                    <td><button class="xoa btn btn-outline-danger p-1">Xóa</button></td>
                                         
-                                    </td>
-                                  <td><button class="xoa btn btn-outline-danger p-1">Xóa</button></td>
-                                    
-                                </tr> -->
+                                    </tr> -->
 
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-            </aside>
-            <aside class="col-lg-4">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        
-                            <div class="form-group"> <label><b>Coupon</b></label>
-                                <div class="input-group"> <input type="text" class="form-control coupon" name=""
-                                        placeholder="Coupon">
-                                    <span class="input-group-append">
-                                        <button class="btn btn-success applyCoupon">Apply</button> </span>
+                </aside>
+                <aside class="col-lg-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            
+                                <div class="form-group"> <label><b>Coupon</b></label>
+                                    <div class="input-group"> <input type="text" class="form-control coupon" name=""
+                                            placeholder="Coupon">
+                                        <span class="input-group-append">
+                                            <button class="btn btn-success applyCoupon">Apply</button> </span>
+                                    </div>
                                 </div>
-                            </div>
-                        
+                            
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <dl class="dlist-align">
-                            <dt>Subtotal: </dt>
-                            <dd class=" total text-right ms-3"></dd>
-                        </dl>
-                        <dl class="dlist-align">
-                            <dt>Discount:</dt>
-                            <dd class=" giam text-right text-danger ms-3"></dd>
-                        </dl>
-                        <dl class="dlist-align">
-                            <dt>Total:</dt>
-                            <dd class=" text-right text-dark ms-3"><strong class="total-last"></strong></dd>
-                        </dl>
-                        <hr>
-                        <a href="#" id="checkout" class=" btn btn-outline-dark">Checkout</a>
-                        <a href="#" id="backShop" class="btn btn-outline-secondary mt-2">Back</a>
+                    <div class="card">
+                        <div class="card-body">
+                            <dl class="dlist-align">
+                                <dt>Subtotal: </dt>
+                                <dd class=" total text-right ms-3"></dd>
+                            </dl>
+                            <dl class="dlist-align">
+                                <dt>Discount:</dt>
+                                <dd class=" giam text-right text-danger ms-3"></dd>
+                            </dl>
+                            <dl class="dlist-align">
+                                <dt>Total:</dt>
+                                <dd class=" text-right text-dark ms-3"><strong class="total-last"></strong></dd>
+                            </dl>
+                            <hr>
+                            <a href="#" id="checkout" class=" btn btn-outline-dark">Checkout</a>
+                            <a href="#" id="backShop" class="btn btn-outline-secondary mt-2">Back</a>
+                        </div>
                     </div>
-                </div>
-            </aside>
+                </aside>
+            </div>
         </div>
+        
     </div>
     <div id="footer"></div>
     <script type="text/javascript" src="../js/cart.js"></script>

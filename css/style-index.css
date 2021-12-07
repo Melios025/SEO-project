@@ -3,51 +3,37 @@
     background-color:burlywood;
     height: 50px;
 }
- 
+
 #main-nav .navbar{
     height: 100px;
-    font-size: 20px;
-    /*z-index: 10;*/
+    font-size: 20px;   
 }
 
-
-#main-nav .navbar .navbar-collapse {
-    text-align: right;
-  }
- 
 #main-nav .navbar li{
     padding-left: 40px;
     padding-right: 40px;
 }
- 
-#main-nav #logo-website{
-    height: 80px;
-    width: 80px;
-    margin-left: 10px;
+
+#logo-website{
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
 }
-/*
-button.navbar-toggler {
-    float: right;
-    padding: 10px;
-    margin: 20px;
-}
-*/ 
-.dropdown:hover .dropdown-menu {
+
+.dropdown:hover>.dropdown-menu {
     display: block;
-    background-color: burlywood;
   }
- 
-.dropdown .dropdown-toggle:active {
+  
+.dropdown>.dropdown-toggle:active {
     pointer-events: none;
 }
- 
- 
+
 /*  end-Header  */
- 
+
 /* carousel */
 .carousel
 {
-   margin-top:70px;
+   margin-top:80px;
    /*z-index: 5;*/
 
 }
@@ -55,15 +41,15 @@ button.navbar-toggler {
 .carousel > .carousel-item {
     height: 300px;
 }
- 
+  
 .carousel-inner > .carousel-item > img{ 
     margin:auto; 
 }
- 
+
 .carousel > .carousel-indicators > li {
     background-color:bisque;
 }
- 
+
 .carousel > .carousel-indicators .active {
     background-color:#404040;
 }
@@ -78,14 +64,14 @@ button.navbar-toggler {
   border: 1px solid black;
   background-image: none;
 }
- 
+
 .carousel-control-next-icon:after
 {
   content: '>';
   font-size: 34px;
   color:#404040;
 }
- 
+
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 34px;
@@ -146,7 +132,7 @@ button.navbar-toggler {
     margin: 100px auto;
 }
 .col-logo {
-    width: 300px;
+    width: 400px;
 }
 .col-logo img {
     width: 100%;
@@ -156,13 +142,7 @@ button.navbar-toggler {
     transform: scale(1.2);
 }
 /* end-brands */
- 
-/* body */
- 
- 
-/* end-body */
- 
- 
+
 /* footer */
 #main-footer #logo-website{
     height: 150px;
@@ -181,16 +161,14 @@ button.navbar-toggler {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     #google-map{
         width: 150px ;
         height: 150px ;
     }
-    .navbar-nav.navbar-right {
-        top: -15px;
-        right: 25px;
-        float: right;
-        position: relative;
+    #main-nav .navbar li{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media only screen and (max-width: 576px) {

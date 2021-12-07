@@ -8,10 +8,7 @@
     height: 80px
 }
 
-.itemside .info, .moreInfo {
-    padding-left: 15px;
-    padding-right: 7px
-}
+
 
 a {
     text-decoration: none !important
@@ -22,7 +19,15 @@ a {
     display: flex;
     width: 100%
 }
+.dlist-align {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
 
+[class*="dlist-"] {
+    margin-bottom: 5px
+}
 
 .coupon {
     border-radius: 1px
@@ -43,17 +48,8 @@ a {
 }
 #checkout:hover{
     background-color: burlywood;
+    border: none;
     color: white;
 }
-.delete {
-    color: #ffffff;
-    background-color: rgb(255, 0, 0);
 
-    font-size: 12px
-}
-
-.delete:hover {
-    color: black;
-    background-color: rgb(190, 82, 82);
-}
 

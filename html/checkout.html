@@ -88,7 +88,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">+84</span>
                                 </div>
-                                <input type="text" class="form-control" id="username" required pattern="[0-9]+">
+                                <input type="text" class="form-control" id="sdt" required pattern="[0-9]+">
                                 <div class="invalid-feedback" style="width: 100%;">
                                     Phone number must be filled
                                 </div>
@@ -241,6 +241,7 @@
                             </div>
 
                         </div>
+
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="card-name">Name*</label>
@@ -259,17 +260,18 @@
 
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-md-3 mb-3">
                                 <label for="card-expiration">EXP*</label>
-                                <input type="date" class="form-control" id="card-expiration" placeholder="mm/yy"
+                                <input type="date" class="form-control" id="card-expiration"
                                     required="">
                                 <div class="invalid-feedback">
                                     Expiration date must be filled
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <label for="cc-expiration">CVV*</label>
+                                <label for="cc-cvv">CVV*</label>
                                 <input type="text" class="form-control" id="cc-cvv" placeholder="" required=""
                                     pattern="[0-9]+">
 
@@ -279,6 +281,7 @@
                             </div>
                             <hr class="mb-4">
                             <button class="btn btn-outline-success btn-lg btn-block" type="submit">Checkout</button>
+                        </div>
                     </form>
                 </div>
             </div>

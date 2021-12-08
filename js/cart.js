@@ -61,7 +61,7 @@ function process() {
              str += '<h4 class="ms-4">' + storageList[i].no + '</h4>'
              str += ' </td>'
              str += '<td>'
-             str += '<div class="priceWrap">' + internationalNumberFormat.format(total).toString() + 'đ</div>'
+             str += '<div class="priceWrap">' + internationalNumberFormat.format(totalEach).toString() + 'đ</div>'
              str += '</td>'
              str += '<td><button onclick="lsdel(\'items\',\'' + i + '\');" class="xoa btn btn-outline-danger p-1">Remove</button></td>';
              str += '</tr > '

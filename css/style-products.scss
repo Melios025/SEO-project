@@ -7,9 +7,8 @@
 		button {
 			width: 90px;
 			height: 70px;
-			p {
+			.text {
 				font-size: 100%;
-				font-size: 60%;
 			}
 		}
 	}
@@ -41,7 +40,7 @@ a {
       width: 90px;
       height: 70px;
     }
-    #products-page #col-menu button p{
+    #products-page #col-menu button .text{
       font-size: 100%;
     }  
   }
@@ -50,6 +49,13 @@ a {
     #banner{
       height: 280px;
     }
+    #products-page #col-menu button{
+      width: 60px;
+      height: 60px;
+    }
+    #products-page #col-menu button .text{
+      font-size: 60%;
+    }
   }
   
   @media only screen and (max-width: 426px) {
@@ -57,7 +63,7 @@ a {
       width: 60px;
       height: 60px;
     }
-    #products-page #col-menu button p{
+    #products-page #col-menu button .text{
       font-size: 60%;
     }
   }

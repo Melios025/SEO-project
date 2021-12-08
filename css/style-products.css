@@ -1,0 +1,61 @@
+/* page */
+
+#products-page {
+  margin-top: 70px;
+}
+
+#products-page .container{
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none !important
+}
+
+/* ============= card =================*/
+.card{
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-img{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.card-body .d-flex{
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  #banner{
+    height: 600px;
+  }
+  #products-page #col-menu button{
+    width: 90px;
+    height: 70px;
+  }
+  #products-page #col-menu button p{
+    font-size: 100%;
+  }  
+}
+
+@media only screen and (max-width: 768px) {
+  #banner{
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  #products-page #col-menu button{
+    width: 60px;
+    height: 60px;
+  }
+  #products-page #col-menu button p{
+    font-size: 60%;
+  }
+}

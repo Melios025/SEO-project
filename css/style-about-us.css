@@ -30,7 +30,7 @@
   display: block;
 }
 
-#about-us-content-2 a {
+#about-us-content-2 a, a {
   text-decoration: none !important;
 }
 

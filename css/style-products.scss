@@ -7,6 +7,10 @@
 		button {
 			width: 90px;
 			height: 70px;
+      img{
+        width: 35px;
+        height: 35px;
+      }
 			.text {
 				font-size: 100%;
 			}
@@ -36,12 +40,12 @@ a {
     #banner{
       height: 600px;
     }
-    #products-page #col-menu button{
+    #products-page #col-menu .nav-link{
       width: 90px;
       height: 70px;
     }
-    #products-page #col-menu button .text{
-      font-size: 100%;
+    #products-page #col-menu .nav-link .text{
+      font-size: 90%;
     }  
   }
   
@@ -49,21 +53,29 @@ a {
     #banner{
       height: 280px;
     }
-    #products-page #col-menu button{
+    #products-page #col-menu .nav-link{
       width: 60px;
       height: 60px;
     }
-    #products-page #col-menu button .text{
+    #products-page #col-menu .nav-link img{
+      width: 30px;
+      height: 30px;
+    }
+    #products-page #col-menu .nav-link .text{
       font-size: 60%;
     }
   }
   
   @media only screen and (max-width: 426px) {
-    #products-page #col-menu button{
-      width: 60px;
-      height: 60px;
+    #products-page #col-menu .nav-link{
+      width: 52px;
+      height: 55px;
     }
-    #products-page #col-menu button .text{
-      font-size: 60%;
+    #products-page #col-menu .nav-link img{
+      width: 20px;
+      height: 20px;
+    }
+    #products-page #col-menu .nav-link .text{
+      font-size: 42%;
     }
   }

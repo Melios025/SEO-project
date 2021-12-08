@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME ON | PC Components</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <!-- style index-->
+    <link rel="stylesheet" href="../css/style-index.css">
+    <link rel="stylesheet" href="../css/style-details.css">
+    <!-- icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery-->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+
+</head>
+<body>
+    <!-- Header-->
+    <div id="header"></div>
+    <!-- product -->
+        <!-- breadcrumb -->
+    <div id="main-body">
+        <div id="before_detail">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="products.html">PC Components</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Details</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- details -->
+        <section id="product_detail" class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="product_galary">
+                    <div class="product_img">
+                        <img src="../images/carousel/1.png" class="rounded mx-auto d-block" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="product_info">
+                    <div class="product_title" style="padding-bottom: 10px;">
+                        <h1>CORSAIR 4000d AIRFLOW</h1>
+                    </div>
+                    <div class="product_vendor" style="display: inline-block;">
+                        <strong>Brand: </strong>
+                        <span>Cosair</span>
+                    </div>
+                    <div class="product_waranty" style="margin-left: 25px; display: inline-block;">
+                        <strong>Warranty: </strong>
+                        <span>3 years</span>
+                    </div>
+
+                    <div class="more_product_info">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="product_price">
+                                    Price:
+                                    <span class="pro_price" style="font-size: 30px; color: red"> 3,900,000đ </span>
+                                </div>
+                                <div class="product_info_text" style="display: block;  border-bottom: 2px solid gray">
+                                    <div class="product_info_text_top" style="margin-top: 20px; border-top: 2px solid gray;">
+                                        <strong>Infomation</strong>
+                                    </div>
+                                    <div class="product_info_text_bottom" style="display: block; ">
+                                        <p>
+                                            Stock: available <br>
+                                            New: 100% <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <ul class="marketing" style="list-style-type: none;">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-1">
+                                                <i class="fas fa-shipping-fast"></i>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Free shipping</h5>
+                                                <p>0-2km</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-1">
+                                                <i class="fas fa-box"></i>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Authentic</h5>
+                                                <p>Real 100%</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-1">
+                                                <i class="fas fa-money-bill-wave"></i>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Refund</h5>
+                                                <p>Can refund in 7 days*</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="add_item">
+                        <a href="#" class="btn btn-primary">Add to cart</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- footer-->
+    <div id="footer"></div>      
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "108017668386666");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script src="../js/main.js"></script>     
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

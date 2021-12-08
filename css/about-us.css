@@ -1,0 +1,106 @@
+#about-us {
+    padding-top: 70px;
+    font-family: "Open Sans", "Odoo Unicode Support Noto", sans-serif;
+}
+
+#about-us .container{
+    margin-top: 30px;
+}
+
+.te_title_2  {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+#about-us-content-1{
+    margin-top: 30px;
+}
+
+#about-us-content-1 p{
+    text-align: justify;
+}
+
+
+#about-us-content-2 img{
+    width: 160px;
+    height: 160px;
+    margin: auto;    
+    display: block;
+}
+
+#about-us-content-2 a{
+    text-decoration: none !important
+}
+
+
+@media only screen and (max-width: 768px) {
+    #about-us-content-2 img{
+        width: 100px;
+        height: 100px;
+        margin: auto;    
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #about-us-content-2 img{
+        width: 50px;
+        height: 50px;
+        margin: auto;    
+        display: block;
+    }
+}
+
+/*
+body {
+        margin: 0;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: white;
+    }
+    p {
+        display: block;
+        margin: 0px auto;
+        font-size: 0.9375rem;
+        color: inherit;
+        font-family: inherit;
+        line-height: 180%;
+    }
+
+    #post {
+        margin-bottom: 16px !important;
+        margin-left: 16px !important;
+        width: 800px;
+        height: 80px;
+        
+        float: left;
+     }
+     #sidebar {
+        margin-bottom: 16px !important;
+        margin-left: 16px !important;
+        width: 660px;
+        height: 100px;
+        
+        float: right;
+       }
+       #sum-post-sidebar {
+        margin-bottom: 16px !important;
+        margin-left: 16px !important;
+        width: 1500px;
+        height: 250px;
+        
+       }
+    h4 {
+        margin-left: 16px;
+    }
+    .bot {
+        text-align: center;
+        padding-top: 50px;
+    }
+*/

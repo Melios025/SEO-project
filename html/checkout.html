@@ -225,51 +225,51 @@
 
                         <h4 class="mb-3">Method payment</h4>
 
-                        <div class="d-block my-3">
-                            <div class="custom-control custom-radio">
-                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked=""
-                                    required="">
-                                <label class="custom-control-label" for="credit">Credit card</label>
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked=""
+                                required="">
+                            <label class="custom-control-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
+                                required="">
+                            <label class="custom-control-label" for="debit">Debit card</label>
+                        </div>
+ 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="card-name">Name*</label>
+                            <input type="text" class="form-control" id="card-name"required="">
+                            <small class="text-muted">Name on the card</small>
+                            <div class="invalid-feedback">
+                                Card's must be filled
                             </div>
-                            <div class="custom-control custom-radio">
-                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
-                                    required="">
-                                <label class="custom-control-label" for="debit">Debit card</label>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="card-number">Card number*</label>
+                            <input type="text" class="form-control" id="card-number" required="" pattern="[0-9]+">
+                            <div class="invalid-feedback">
+                                Invalid card number
                             </div>
     
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="card-name">Name</label>
-                                <input type="text" class="form-control" id="card-name"required="">
-                                <small class="text-muted">Name on the card</small>
-                                <div class="invalid-feedback">
-                                    Card's must be filled
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="card-number">Card number</label>
-                                <input type="text" class="form-control" id="card-number" required="" pattern="[0-9]+">
-                                <div class="invalid-feedback">
-                                    Invalid card number
-                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="card-expiration">EXP*</label>
+                            <input type="date" class="form-control" id="card-expiration" placeholder="mm/yy" required="">
+                            <div class="invalid-feedback">
+                                Expiration date must be filled
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-3 mb-3">
-                                <label for="card-expiration">Expiration date</label>
-                                <input type="date" class="form-control" id="card-expiration" placeholder="mm/yy" required="">
-                                <div class="invalid-feedback">
-                                    Expiration date must be filled
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="cc-expiration">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="" pattern="[0-9]+">
-                                <small class="text-muted">3 number behind your card</small>
-                                <div class="invalid-feedback">
-                                    CVV invalid
-                                </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-expiration">CVV*</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="" pattern="[0-9]+">
+                            
+                            <div class="invalid-feedback">
+                                CVV invalid
                             </div>
                         </div>
                         <hr class="mb-4">

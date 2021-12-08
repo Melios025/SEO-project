@@ -1,61 +1,54 @@
-/* Header */
-#before-nav{
-    background-color:burlywood;
-    height: 50px;
+#before-nav {
+  background-color: burlywood;
+  height: 50px;
 }
 
-#main-nav .navbar{
-    height: 100px;
-    font-size: 20px;   
+#main-nav .navbar {
+  height: 100px;
+  font-size: 20px;
 }
 
-#main-nav .navbar li{
-    padding-left: 40px;
-    padding-right: 40px;
+#main-nav .navbar li {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-#logo-website{
-    height: 100px;
-    width: 100px;
-    margin-left: 50px;
+#logo-website {
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
 }
 
-.dropdown:hover>.dropdown-menu {
-    display: block;
-  }
-  
-.dropdown>.dropdown-toggle:active {
-    pointer-events: none;
+.dropdown:hover > .dropdown-menu {
+  display: block;
 }
 
-/*  end-Header  */
-
-/* carousel */
-.container{
-    margin-top: 70px
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
 }
 
-.carousel
-{
-   margin-top:80px;
-   /*z-index: 5;*/
-
+.container {
+  margin-top: 70px;
 }
- 
+
+.carousel {
+  margin-top: 80px;
+}
+
 .carousel > .carousel-item {
-    height: 300px;
-}
-  
-.carousel-inner > .carousel-item > img{ 
-    margin:auto; 
+  height: 300px;
 }
 
 .carousel > .carousel-indicators > li {
-    background-color:bisque;
+  background-color: bisque;
 }
 
 .carousel > .carousel-indicators .active {
-    background-color:#404040;
+  background-color: #404040;
+}
+
+.carousel-inner > .carousel-item > img {
+  margin: auto;
 }
 
 .carousel-control-prev-icon,
@@ -69,11 +62,10 @@
   background-image: none;
 }
 
-.carousel-control-next-icon:after
-{
+.carousel-control-next-icon:after {
   content: '>';
   font-size: 34px;
-  color:#404040;
+  color: #404040;
 }
 
 .carousel-control-prev-icon:after {
@@ -82,147 +74,125 @@
   color: #404040;
 }
 
-/* end-carousel */
-
-/* ========================= Categories ============================ */
-/* featured categories */
 .categories {
-    margin: 100px auto;
-    text-align: center;
+  margin: 100px auto;
+  text-align: center;
 }
-.col-fea-cate {
-    flex-basis: 25%;
-    min-width: 250px;
-    margin-bottom: 30px;
-}
-.col-fea-cate img {
-    width: 30%;
-    cursor: pointer;
-}
-.col-fea-cate img:hover {
-    transform: scale(1.2);
-}
+
 .categories h4 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
-/* end-features categories */
 
-/* featured categories */
+.col-fea-cate {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.col-fea-cate img {
+  width: 30%;
+  cursor: pointer;
+}
+
+.col-fea-cate img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .products {
-    margin: 100px auto;
-    text-align: center;
+  margin: 100px auto;
+  text-align: center;
 }
 
-.products img{
-    width:  280px;
-    height: 250px;
+.products img {
+  width: 280px;
+  height: 250px;
 }
+
 .products img:hover {
-    transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-/* old
-.col-fea-pro {
-    flex-basis: 25%;
-    min-width: 250px;
-    margin-bottom: 30px;
-}
-.col-fea-pro img {
-    height: 60%;
-    width: 70%;
-    cursor: pointer;
-}
-.col-fea-pro img:hover {
-    transform: scale(1.2);
-}
-*/
 .products h4 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-/* end-features categories */
-/* ========================= End-Categories ============================ */
-
-/* brands */
 .brands {
-    margin: 50px auto;
+  margin: 50px auto;
 }
-/*
-.col-logo {
-    width: 400px;
-}
-*/
+
 .col-logo img {
-    width: 100%;
-    cursor: pointer;
+  width: 100%;
+  cursor: pointer;
 }
+
 .col-logo img:hover {
-    transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
-/* end-brands */
 
-/* footer */
-#main-footer #logo-website{
-    height: 150px;
-    width: 150px;  
+#main-footer #logo-website {
+  height: 150px;
+  width: 150px;
 }
-/* end-footer */
 
-/* mobile */
 @media only screen and (max-width: 1300px) {
-    #main-nav #navbarNav{
-        background-color:whitesmoke;
-    }
-    #main-nav .navbar li{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .products img{
-        width:  210px;
-        height: 180px;
-    }
+  #main-nav #navbarNav {
+    background-color: whitesmoke;
+  }
+  #main-nav .navbar li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .products img {
+    width: 210px;
+    height: 180px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-    #main-nav #navbarNav{
-        background-color:whitesmoke;
-    }
-    #main-nav .navbar li{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .products img{
-        width:  180px;
-        height: 150px;
-    }
-    #logo-website{
-        height: 80px;
-        width: 80px;
-        margin-left: 30px;
-    }
+  #main-nav #navbarNav {
+    background-color: whitesmoke;
+  }
+  #main-nav .navbar li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .products img {
+    width: 180px;
+    height: 150px;
+  }
+  #logo-website {
+    height: 80px;
+    width: 80px;
+    margin-left: 30px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    #google-map{
-        width: 500px ;
-        height: 250px ;
-    }
-    #main-nav .navbar li{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    #logo-website{
-        height: 60px;
-        width: 60px;
-        margin-left: 20px;
-    }
+  #google-map {
+    width: 500px;
+    height: 250px;
+  }
+  #main-nav .navbar li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #logo-website {
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+  }
 }
+
 @media only screen and (max-width: 576px) {
-    #google-map{
-        width: 300px ;
-        height: 250px ;
-    }
-    /* old
+  #google-map {
+    width: 300px;
+    height: 250px;
+  }
+  /* old
     .col-fea-pro {
         flex-basis: 25%;
         min-width: 250px;
@@ -234,10 +204,11 @@
         cursor: pointer;
     }
     */
-    .products img{
-        width:  250px;
-        height: 200px;
-    }
+  .products img {
+    width: 250px;
+    height: 200px;
+  }
 }
 
 /* end-mobile */
+/*# sourceMappingURL=style-index.css.map */
